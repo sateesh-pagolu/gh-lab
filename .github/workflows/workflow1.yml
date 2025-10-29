@@ -2,9 +2,13 @@ name: first-lab-workflow
 on: workflow_dispatch
 jobs:
   first-job:
-    runs-on: ununtu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print greeting
         run: echo "Hello world!"
       - name: Print goodbye
         run: echo "Good bye!"
+      - name: Print multiple messages
+        run: |
+            echo "first message"
+            echo "second message"
